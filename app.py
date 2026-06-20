@@ -29,6 +29,6 @@ $$
 $$
 fixed it, kind of\n
 
-$ Experiment\\ number\\ two\\ \\text{i love latex's italic computer modern font instead of the normal one} $
+$$ Experiment\\ number\\ two\\ \\text{(i love latex's italic computer modern font instead of the normal one)} $$
 
 """
