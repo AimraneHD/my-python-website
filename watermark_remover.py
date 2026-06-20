@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-st.write("test")
 # --- HIDE NATIVE STREAMLIT BRANDING (Footer, Menu, Header) ---
 hide_st_style = """
             <style>
