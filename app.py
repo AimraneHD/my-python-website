@@ -30,17 +30,17 @@ st.write("one more thing, what if i...")
 st.write("""
 | full name | Massar code | Ensam code | Current grade |
 |-----------|-------------|------------|---------------|
-| Aimrane Haddou | B136070002 | M24401 | 2nd year |
+| Aimrane Haddou | B123456789 | M12345 | 2nd year |
 """)
 st.write("wait hold on..., i can just write everything in one whole string like i would in a markdown file without having to write \"st.write\" over and over again")
 st.write("""
 Hello, my name is Aimrane Haddou, I am currently a second year student, well..., was a second year student, but not officially a 3rd year one yet, summer just started\n
-Here is my totally real ensam code: $M24401$\n
-Here is my totally real Massar code as well: $B136070002$\n
+Here is my totally real ensam code: $M12345$\n
+Here is my totally real Massar code as well: $B123456789$\n
 and here is everything i mentioned above in a table:\n
 | full name | Massar code | Ensam code | Current grade|
 |---|---|---|---|
-| Aimrane Haddou | B136070002 | M24401 | 2nd year |
+| Aimrane Haddou | B123456789 | M12345 | 2nd year |
 
 i dont know how to escape this table\n
 here is also a math block for no reason:\n
@@ -87,17 +87,17 @@ st.write("one more thing, what if i...")
 st.write(\"\"\"
 | full name | Massar code | Ensam code | Current grade |
 |-----------|-------------|------------|---------------|
-| Aimrane Haddou | B136070002 | M24401 | 2nd year |
+| Aimrane Haddou | B123456789 | M12345 | 2nd year |
 \"\"\")
 st.write("wait hold on..., i can just write everything in one whole string like i would in a markdown file without having to write \"st.write\" over and over again")
 st.write(\"\"\"
 Hello, my name is Aimrane Haddou, I am currently a second year student, well..., was a second year student, but not officially a 3rd year one yet, summer just started\n
-Here is my totally real ensam code: $M24401$\n
-Here is my totally real Massar code as well: $B136070002$\n
+Here is my totally real ensam code: $M12345$\n
+Here is my totally real Massar code as well: $B123456789$\n
 and here is everything i mentioned above in a table:\n
 | full name | Massar code | Ensam code | Current grade|
 |---|---|---|---|
-| Aimrane Haddou | B136070002 | M24401 | 2nd year |
+| Aimrane Haddou | B123456789 | M12345 | 2nd year |
 
 i dont know how to escape this table\n
 here is also a math block for no reason:\n
