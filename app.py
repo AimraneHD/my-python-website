@@ -16,5 +16,5 @@ for i in range(10):
 
 st.write("so 7's the limit, interesting")
 
-st.write(pd.dataframe({'A': [1, 2], 'B': [3, 4]}))
+st.write(pd.DataFrame({'A': [1, 2], 'B': [3, 4]}))
 st.write("hmm")
