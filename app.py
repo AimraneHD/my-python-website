@@ -1,27 +1,11 @@
 import streamlit as st
 import watermark_remover as wr
+import pandas as pd
+import time
+import random
 
 wr.remove_watermark()
 
-# --- Your normal app code continues down here ---
-st.title("My Portal")
-st.write("Welcome back!")
-
-# --- Your app code starts here ---
-st.title("My 100% Custom Website")
-st.write("Look closely... there are no watermarks left.")
-
-# Your normal code continues down here...
-st.write("Look mom, no watermarks!")
-"""
-Hello world\n
-My name is Aimrane Haddou, I'm a 2nd year student, and will be a 3rd year one in a few months\n
-Let's see what happens\n
-$$
-\\text{Here's a random maxwell equation} \\implies \\boxed{ \\vec{rot}(\\vec{E})=-\\frac{ \\partial\\vec{B} }{ \\partial t }}\n
-$$
-fixed it, kind of\n
-
-$$ Experiment\\ number\\ two\\ \\text{(i love latex's italic computer modern font instead of the normal one)}\n $$
-
-"""
+while True:
+    st.write(pd.DataFrame({'Column 1': [random.Random(100), random.Random(100)], 'Column 2': [random.Random(100), random.Random(100)]}))
+    time.sleep(60*2)
