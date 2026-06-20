@@ -6,6 +6,15 @@ import random
 
 wr.remove_watermark()
 
+placeholder = st.empty()
+
 while True:
-    st.write(pd.DataFrame({'Column 1': [random.choice(range(100)), random.choice(range(100))], 'Column 2': [random.choice(range(100)), random.choice(range(100))]}))
+    new_table = pd.DataFrame({
+        'Column 1': [random.randint(100), random.randint(100)],
+        'Column 2': [random.randint(100), random.randint(100)]
+    })
+    
+    with placeholder.container():
+        st.write(new_table)
+    
     time.sleep(60*2)
