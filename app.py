@@ -25,3 +25,4 @@ st.write("""$$\n
 e=-\\frac{d\\phi}{dt}=\\oint(\\vec{E}+\\vec{v}\\times\\vec{B}).\\vec{dl}\n
 \\end{equation}\n
 $$""")
+st.write("i dont want it to put a number next to an equation though")
