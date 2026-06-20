@@ -26,3 +26,9 @@ e=-\\frac{d\\phi}{dt}=\\oint(\\vec{E}+\\vec{v}\\times\\vec{B}).\\vec{dl}\n
 \\end{equation}\n
 $$""")
 st.write("i dont want it to put a number next to an equation though")
+st.write("one more thing, what if i...")
+st.write("""
+| full name | Massar code | Ensam code | Current grade |
+|-----------|-------------|------------|---------------|
+| Aimrane Haddou | B136070002 | M24401 | 2nd year |
+""")
