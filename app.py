@@ -20,10 +20,8 @@ st.write(pd.DataFrame({'A': [1, 2], 'B': [3, 4]}))
 st.write("hmm")
 
 st.write("i noticed this text format almost looks like markdown, i wonder if i can...")
-st.write("""$$\n
-\\begin{equation}\n
-e=-\\frac{d\\phi}{dt}=\\oint(\\vec{E}+\\vec{v}\\times\\vec{B}).\\vec{dl}\n
-\\end{equation}\n
+st.write("""$$
+e=-\\frac{d\\phi}{dt}=\\oint(\\vec{E}+\\vec{v}\\times\\vec{B}).\\vec{dl}
 $$""")
 st.write("i dont want it to put a number next to an equation though")
 st.write("one more thing, what if i...")
