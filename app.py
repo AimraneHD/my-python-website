@@ -50,3 +50,4 @@ e=-\\frac{d\\phi}{dt}=\\oint(\\vec{E}+\\vec{v}\\times\\vec{B}).\\vec{dl}\n
 \\end{equation}
 $$
 """)
+st.write({"Name" : "Gemini", "Role": "AI"})
