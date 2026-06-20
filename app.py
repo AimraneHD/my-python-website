@@ -9,9 +9,7 @@ $$
 \\boxed{\\text{Here's a random maxwell equation} \\implies \\boxed{ \\vec{rot}(\\vec{E})=-\\frac{ \\partial\\vec{B} }{ \\partial t }}}\n
 $$
 fixed it, kind of\n
-"""
 
-"""
 $ Experiment\\ number\\ two\\ \\text{i love latex's italic computer modern font instead of the normal one} $
 
 """
