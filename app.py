@@ -1,14 +1,7 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-# --- DESTROY THE CLOUD WATERMARK ---
-html('''
-<script>
-window.top.document.querySelectorAll(`[href*="streamlit.io"]`).forEach(e => e.setAttribute("style", "display: none;"));
-</script>
-''', width=0, height=0)
-
-# --- HIDE STREAMLIT BRANDING ---
+# --- 1. HIDE THE NATIVE STREAMLIT BRANDING ---
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -17,6 +10,23 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+# --- 2. NUKE THE "CREATED BY" CLOUD VIEWER BADGE ---
+html('''
+<script>
+    // Reach outside the iframe into the main browser window
+    const parentElements = window.parent.document.querySelectorAll('[class*="viewerBadge"]');
+    
+    // Forcefully hide any container associated with the viewer badge
+    parentElements.forEach(function(element) {
+        element.style.display = 'none';
+    });
+</script>
+''', width=0, height=0)
+
+# --- Your app code starts here ---
+st.title("My 100% Custom Website")
+st.write("Look closely... there are no watermarks left.")
 
 # Your normal code continues down here...
 st.write("Look mom, no watermarks!")
