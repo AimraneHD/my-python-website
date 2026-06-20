@@ -7,23 +7,32 @@ import random
 # Clear the watermarks
 wr.remove_watermark()
 
-st.title("Live Data Feed 📡")
-st.write("This table updates every two minutes.")
+st.title("Strict 2-Minute Data Feed ⏱️")
 
-# 1. Create an empty placeholder box on the website
-placeholder = st.empty()
-
-# 2. Start your infinite loop
-while True:
-    # Create the new table with actual random integers
-    new_table = pd.DataFrame({
+# --- THE MAGIC MEMORY FUNCTION ---
+# ttl=120 means "Time To Live is 120 seconds". 
+# It locks the generated data for exactly two real-world minutes.
+@st.cache_data(ttl=120)
+def get_random_data():
+    return pd.DataFrame({
         'Column 1': [random.randint(1, 100), random.randint(1, 100)], 
         'Column 2': [random.randint(1, 100), random.randint(1, 100)]
     })
+
+# Create an empty placeholder box on the website
+placeholder = st.empty()
+
+# Start your infinite loop
+while True:
+    # Fetch the data from our cached function
+    new_table = get_random_data()
     
-    # Overwrite the placeholder box with the new table
+    # Overwrite the placeholder box with the table
     with placeholder.container():
+        st.write("This table is locked. It will only change every 2 real minutes!")
         st.write(new_table)
         
-    # Pause the loop for 2 minutes (120 seconds) before running again
-    time.sleep(120)
+    # We only sleep for 1 second now!
+    # The loop runs constantly, but the data it pulls from get_random_data() 
+    # will remain identical until the 120-second cache timer expires.
+    time.sleep(1)
