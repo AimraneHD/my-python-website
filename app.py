@@ -20,4 +20,4 @@ st.write(pd.DataFrame({'A': [1, 2], 'B': [3, 4]}))
 st.write("hmm")
 
 st.write("i noticed this text format almost looks like markdown, i wonder if i can...")
-st.write("$$ e=-\frac{d\phi}{dt}=\oint(\vec{E}+\vec{v}\times\vec{B}).\vec{dl} $$")
+st.write("$ e=-\frac{d\phi}{dt}=\oint(\vec{E}+\vec{v}\times\vec{B}).\vec{dl} $")
