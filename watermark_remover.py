@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-"""why aint this working"""
 # --- HIDE NATIVE STREAMLIT BRANDING (Footer, Menu, Header) ---
 hide_st_style = """
             <style>
@@ -18,3 +17,5 @@ html('''
 window.top.document.querySelectorAll(`[href*="streamlit.io"]`).forEach(e => e.setAttribute("style", "display: none;"));
 </script>
 ''', width=0, height=0)
+
+st.write("why aint this working")
