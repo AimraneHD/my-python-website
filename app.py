@@ -7,5 +7,5 @@ import random
 wr.remove_watermark()
 
 while True:
-    st.write(pd.DataFrame({'Column 1': [random.Random(100), random.Random(100)], 'Column 2': [random.Random(100), random.Random(100)]}))
+    st.write(pd.DataFrame({'Column 1': [random.choice(range(100)), random.choice(range(100))], 'Column 2': [random.choice(range(100)), random.choice(range(100))]}))
     time.sleep(60*2)
