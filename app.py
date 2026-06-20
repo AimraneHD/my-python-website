@@ -1,6 +1,17 @@
 import streamlit as st
-import pandas as pd
 
+# --- HIDE STREAMLIT BRANDING ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+# Your normal code continues down here...
+st.write("Look mom, no watermarks!")
 """
 Hello world\n
 My name is Aimrane Haddou, I'm a 2nd year student, and will be a 3rd year one in a few months\n
