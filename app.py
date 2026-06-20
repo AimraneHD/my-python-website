@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-# --- 1. HIDE THE NATIVE STREAMLIT BRANDING ---
+# --- HIDE NATIVE STREAMLIT BRANDING (Footer, Menu, Header) ---
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -11,18 +11,16 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# --- 2. NUKE THE "CREATED BY" CLOUD VIEWER BADGE ---
+# --- DESTROY THE STREAMLIT.IO CLOUD WATERMARK ---
 html('''
 <script>
-    // Reach outside the iframe into the main browser window
-    const parentElements = window.parent.document.querySelectorAll('[class*="viewerBadge"]');
-    
-    // Forcefully hide any container associated with the viewer badge
-    parentElements.forEach(function(element) {
-        element.style.display = 'none';
-    });
+window.top.document.querySelectorAll(`[href*="streamlit.io"]`).forEach(e => e.setAttribute("style", "display: none;"));
 </script>
 ''', width=0, height=0)
+
+# --- Your normal app code continues down here ---
+st.title("My Portal")
+st.write("Welcome back!")
 
 # --- Your app code starts here ---
 st.title("My 100% Custom Website")
