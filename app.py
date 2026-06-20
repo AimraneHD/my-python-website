@@ -1,5 +1,7 @@
 import streamlit as st
-import watermark_remover
+import watermark_remover as wr
+
+wr.remove_watermark()
 
 # --- Your normal app code continues down here ---
 st.title("My Portal")
