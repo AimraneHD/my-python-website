@@ -32,3 +32,19 @@ st.write("""
 |-----------|-------------|------------|---------------|
 | Aimrane Haddou | B136070002 | M24401 | 2nd year |
 """)
+st.write("wait hold on..., i can just write everything in one whole string like i would in a markdown file without having to write \"st.write\" over and over again")
+st.write("""
+Hello, my name is Aimrane Haddou, I am currently a second year student, well..., was a second year student, but not officially a 3rd year one yet, summer just started
+Here is my totally real ensam code: $M24401$
+Here is my totally real Massar code as well: $B136070002$
+and here is everything i mentioned above in a table:
+| full name | Massar code | Ensam code | Current grade|
+|---|---|---|---|
+| Aimrane Haddou | B136070002 | M24401 | 2nd year |
+here is also a math block for no reason:
+$$
+\\begin{equation}
+e=-\\frac{d\\phi}{dt}=\\oint(\\vec{E}+\\vec{v}\\times\\vec{B}).\\vec{dl}\n
+\\end{equation}
+$$
+""")
