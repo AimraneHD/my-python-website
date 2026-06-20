@@ -41,7 +41,7 @@ and here is everything i mentioned above in a table:\n
 | full name | Massar code | Ensam code | Current grade|
 |---|---|---|---|
 | Aimrane Haddou | B136070002 | M24401 | 2nd year |
-|-------------------------------------------------|
+|---|---|---|---|
 here is also a math block for no reason:\n
 $$
 \\begin{equation}
